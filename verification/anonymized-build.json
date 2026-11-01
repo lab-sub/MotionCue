@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-02",
+  "change": "Package and namespace rename only; application logic unchanged",
+  "applicationId": "app.motioncue",
+  "apk": "apk/MotionCue_release.apk",
+  "apk_sha256": "bc22ea0fa38e6a110dea4aa16ed67845141a539d882ead3bf6dbb4fb59c26bd5",
+  "apk_bytes": 39594763,
+  "signature": "Android Debug, APK Signature Scheme v2 verified",
+  "tests": {
+    "core": 75,
+    "app": 50,
+    "total": 125,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 28
+  },
+  "builds": [
+    "debug",
+    "debugAndroidTest",
+    "release"
+  ],
+  "emulator": "Pleos Connect Emulator v2.1.0, release APK installed, installed base.apk hash equals apk_sha256 before and after the run",
+  "results": {
+    "mock_95s_completed": true,
+    "fatal_exceptions": 0,
+    "security_exceptions": 0,
+    "live_permission_dialog_shown_and_granted": "pleos.car.permission.FUSED_LOCATION",
+    "steering_minus100": "rear left coral",
+    "steering_plus100": "front passenger and rear right coral",
+    "brake": "amber on three passenger seats while the brake and deceleration conditions hold",
+    "navigation_tbt": "left turn and remaining distance received during real navigation guidance; rear left coral inside ETA window",
+    "recovery_front_passenger": {
+      "window_setting": [
+        0,
+        20,
+        0
+      ],
+      "temperature_setting_c": [
+        22.0,
+        20.5,
+        22.0
+      ],
+      "pleos_tts_start_and_done_callbacks": true
+    }
+  },
+  "demo_videos": {
+    "changed": false,
+    "captured_with_build_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+    "note": "Screens are the same; the capture build differs from this APK only by package name."
+  },
+  "not_verified": [
+    "physical vehicle",
+    "physical lamp color",
+    "speaker listening by a person",
+    "motion sickness effect"
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 위에서 본 차량 실루엣 + 좌우 앰비언트 라인 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FF50333F"
+        android:pathData="M42,30 L66,30 Q72,30 72,36 L72,72 Q72,78 66,78 L42,78 Q36,78 36,72 L36,36 Q36,30 42,30 Z" />
+    <path
+        android:fillColor="#FFFF6B63"
+        android:pathData="M30,38 L33,38 L33,70 L30,70 Z" />
+    <path
+        android:fillColor="#FFFFB000"
+        android:pathData="M75,38 L78,38 L78,70 L75,70 Z" />
+    <path
+        android:fillColor="#FFB98292"
+        android:pathData="M42,36 L66,36 L64,44 L44,44 Z" />
+</vector>

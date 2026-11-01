@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pleos Connect(AAOS) 전용 앱. FusedLocation SDK도 같은 feature를 required로 선언한다. -->
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true" />
+
+    <!-- Vehicle SDK (권한 값은 SDK 2.3.2의 @RequiresPermission 기준) -->
+    <!-- 앰비언트 조명: check/get/set 모두 CAR_LIGHTS. 문서 표가 set에 CONTROL_*을 안내하므로 함께 선언 -->
+    <uses-permission android:name="pleos.car.permission.CAR_LIGHTS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_LIGHTS" />
+    <!-- 조향각·브레이크 페달 -->
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <!-- 회복 개입: 공조 풍량·온도 -->
+    <uses-permission android:name="pleos.car.permission.CAR_CLIMATE" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_CLIMATE" />
+    <!-- 회복 개입: 창문 -->
+    <uses-permission android:name="pleos.car.permission.CAR_WINDOWS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_WINDOWS" />
+
+    <!-- NaviHelper SDK: getTBTInfo(), getCurrentLocationInfo() -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+
+    <!-- FusedLocation SDK -->
+    <uses-permission android:name="pleos.car.permission.FUSED_LOCATION" />
+
+    <!-- Pleos TextToSpeech SDK의 기기 내 합성(normal 권한, 앱 등록/비밀키 불필요) -->
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MotionCue">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MotionCue">
+            <!-- 주행 중 사용을 위한 Distraction Optimization 선언 (미선언 앱은 주행 중 사용 불가) -->
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

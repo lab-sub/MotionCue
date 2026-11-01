@@ -1,0 +1,168 @@
+{
+  "date": "2026-11-02",
+  "applicationRevision": "Package rename only (app.motioncue); no logic change",
+  "forcedExecution": true,
+  "tasksExecutedAfterSourceChanges": true,
+  "modules": [
+    {
+      "module": "core",
+      "task": "test",
+      "tests": 75,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suites": [
+        {
+          "name": "app.motioncue.core.actuation.FadingTest",
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.core.engine.ClassifierTest",
+          "tests": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.core.engine.CueEngineTest",
+          "tests": 42,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.core.engine.SpeedEstimationTest",
+          "tests": 15,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.core.scenario.DefaultScenarioTest",
+          "tests": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    {
+      "module": "app",
+      "task": "testDebugUnitTest",
+      "tests": 50,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suites": [
+        {
+          "name": "app.motioncue.actuator.DispatchRateLimiterTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.actuator.SafeAreasTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.data.LiveSpeedEventsTest",
+          "tests": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.data.MockScenarioSourceTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.data.NavigationGuidanceGateTest",
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.data.TelemetryReadRetryTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.recovery.RecoveryMathTest",
+          "tests": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.sdk.PendingSdkWritesTest",
+          "tests": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.sdk.SdkCallbacksTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.session.SessionStateTest",
+          "tests": 3,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "app.motioncue.ui.UiFormatTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    }
+  ],
+  "total": {
+    "tests": 125,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "task": ":app:lintDebug",
+    "counts": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 28,
+      "Information": 0
+    },
+    "report": "app/build/reports/lint-results-debug.xml"
+  },
+  "builds": [
+    "debug",
+    "debugAndroidTest",
+    "release"
+  ],
+  "note": "Aggregated JUnit XML from the package-renamed build; all 125 tests executed with --rerun-tasks. Device and media evidence are tracked separately.",
+  "buildSummary": {
+    "result": "BUILD SUCCESSFUL",
+    "actionableTasks": 134,
+    "executedTasks": 134,
+    "rerunTasks": true
+  }
+}

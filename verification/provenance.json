@@ -1,0 +1,606 @@
+{
+  "scope_note": "2026-11-01 촬영 빌드 기준 기록이다. 이 문서의 apk_sha256은 촬영 빌드 값이며, 현재 저장소 APK는 패키지 이름만 바꾼 빌드 bc22ea0fa38e6a110dea4aa16ed67845141a539d882ead3bf6dbb4fb59c26bd5 이다 (anonymized-build.json 참고).",
+  "date": "2026-11-01",
+  "runtime_observation_date": "2026-11-01",
+  "apk_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+  "apk_bytes": 39627559,
+  "apk_equal_to_runtime_verified_release": true,
+  "runtime_repeated_today": true,
+  "current_runtime_verification_status": "complete within current emulator capture scope; final encoded media automatic checks passed; independent final visual audit passed",
+  "source_changes_since_runtime": [],
+  "behavior_logic_changed": false,
+  "turn_cue_color_changed": false,
+  "submission_copy_changes": [
+    "gradle.properties: development-path comment removed previously",
+    "app/src/androidTest/README.md: shareable instructions retained"
+  ],
+  "signature": "Android Debug",
+  "signature_v2_verified": true,
+  "physical_vehicle_or_clinical_effect_verified": false,
+  "runtime_observation_scope": "Current release APK: installed base.apk directly matched before and after capture; actual MP4 frames confirm Mock95 completion, navigation-off steering and conditional brake cues, continuous ETA entry-to-left-seat prediction, recovery UI plus front-passenger window setting change/restoration. No physical vehicle/lamp/clinical validation.",
+  "source_changes_from_previous_2026_10_29": [
+    "Burgundy/coral UI and launcher colors",
+    "Coral turn palette; amber deceleration palette unchanged"
+  ],
+  "historical_evidence": {
+    "date": "2026-10-29",
+    "scope": [
+      "Route cancellation stale-cue blocking",
+      "Recovery SDK readback and restoration",
+      "Background restoration and explicit resume",
+      "Pleos Korean TTS playback start/done callbacks"
+    ],
+    "repeated_in_red_run": false,
+    "repeated_in_redesign_run": false
+  },
+  "temporary_emulator_cleanup_complete": true,
+  "final_videos": [
+    {
+      "file": "demo/MotionCue_demo_ko.mp4",
+      "sha256": "dd4fca4625c76e4b608855f1900adcbc34543343301944d259dc0dc9ea25e50a",
+      "bytes": 8040856,
+      "duration_seconds": 144.86666666666667,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "video_codec": "h264",
+      "fps": 30.0,
+      "frames": 4346,
+      "decode_errors": 0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration_seconds": 144.866,
+      "integrated_lufs": "-16.06",
+      "true_peak_dbtp": "-1.38",
+      "decoded_peak": 0.8493981957435608,
+      "moov_before_mdat": true,
+      "voice_placements": 11,
+      "minimum_expected_wav_to_final_aac_correlation": 0.9995414614677429,
+      "all_voice_files_fit_before_scene_end": true,
+      "all_voice_windows_non_silent": true,
+      "expected_soundtrack_sha256": "6a4daf2945941c6b927d3fb7be704e6c20ea04ba8f09164e3bcef9bada7efb78",
+      "new_full_final_video_asr_performed": false,
+      "human_listening_performed": false,
+      "asr_method": "Three changed phrases newly recognized; unchanged narration linked by exact WAV hashes. Final encoded audio checked by waveform correlation.",
+      "subtitle_file": "demo/MotionCue_demo_ko.srt",
+      "subtitle_sha256": "0ac33df01d701199b52f616fefc8c6a45c301640251379c0ecebedd0456967f7",
+      "subtitle_cues": 18,
+      "independent_final_visual_audit": "passed"
+    },
+    {
+      "file": "demo/MotionCue_shortform_ko.mp4",
+      "sha256": "23517063003feb8d2d9f56fb5658d39f5caa99aeee461c77a5285c6a62f4a413",
+      "bytes": 2467221,
+      "duration_seconds": 40.0,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "video_codec": "h264",
+      "fps": 30.0,
+      "frames": 1200,
+      "decode_errors": 0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration_seconds": 40.0,
+      "integrated_lufs": "-16.16",
+      "true_peak_dbtp": "-1.62",
+      "decoded_peak": 0.815483808517456,
+      "moov_before_mdat": true,
+      "voice_placements": 6,
+      "minimum_expected_wav_to_final_aac_correlation": 0.9997357130050659,
+      "all_voice_files_fit_before_scene_end": true,
+      "all_voice_windows_non_silent": true,
+      "expected_soundtrack_sha256": "7bc7c1a87070b15568ea7e9d2d55a17736fe4af58a7ffb5c81d2ae84a213e883",
+      "new_full_final_video_asr_performed": false,
+      "human_listening_performed": false,
+      "asr_method": "Three changed phrases newly recognized; unchanged narration linked by exact WAV hashes. Final encoded audio checked by waveform correlation.",
+      "subtitle_file": "demo/MotionCue_shortform_ko.srt",
+      "subtitle_sha256": "2f84b9b6044058e88039b08066df48f3b0329ffc0a1e37a9aa76c778c5c91a2b",
+      "subtitle_cues": 7,
+      "independent_final_visual_audit": "passed"
+    }
+  ],
+  "previous_runtime_results_2026_10_31": {
+    "date": "2026-10-31",
+    "live": {
+      "build": "debug",
+      "apk_sha256": "a77ead75a338da46da50a6d6ba9038eb2a4213f46226be23df403bf50550fc45",
+      "state_samples": 1472,
+      "all_checks": {
+        "traceFinished": true,
+        "productionPipelineWithoutFakeMotionEvents": true,
+        "driverExcludedAllStates": true,
+        "allCueColorsMatchCurrentPalette": true,
+        "leftReactiveRedRearLeft": true,
+        "rightReactiveRedFrontAndRearRight": true,
+        "brakeAmberAllPassengers": true,
+        "predictionLeft80AtZeroSteering": true,
+        "cleanupObservedStoppedInBackground": true,
+        "lastRecordedConsoleInputsAllZero": true
+      },
+      "input_request_errors": 0,
+      "lighting_enabled": false,
+      "physical_lighting_measured": false,
+      "settled_phase_counts": [
+        {
+          "phase": "stationary",
+          "samples": 79,
+          "zones": {
+            "": 79
+          },
+          "colors": {}
+        },
+        {
+          "phase": "straight",
+          "samples": 97,
+          "zones": {
+            "": 97
+          },
+          "colors": {}
+        },
+        {
+          "phase": "left",
+          "samples": 84,
+          "zones": {
+            "REAR_LEFT": 84
+          },
+          "colors": {
+            "#FFFF9D96": 84
+          }
+        },
+        {
+          "phase": "right",
+          "samples": 85,
+          "zones": {
+            "FRONT_PASSENGER,REAR_RIGHT": 85
+          },
+          "colors": {
+            "#FFFF9D96": 170
+          }
+        },
+        {
+          "phase": "brake",
+          "samples": 60,
+          "zones": {
+            "": 39,
+            "FRONT_PASSENGER,REAR_LEFT,REAR_RIGHT": 21
+          },
+          "colors": {
+            "#FFFFB000": 63
+          }
+        },
+        {
+          "phase": "released",
+          "samples": 62,
+          "zones": {
+            "": 62
+          },
+          "colors": {}
+        },
+        {
+          "phase": "prediction_high_speed",
+          "samples": 96,
+          "zones": {
+            "REAR_LEFT": 88,
+            "": 8
+          },
+          "colors": {
+            "#FFFF6B63": 88
+          }
+        },
+        {
+          "phase": "stopped",
+          "samples": 100,
+          "zones": {
+            "REAR_LEFT": 100
+          },
+          "colors": {
+            "#FFFF6B63": 100
+          }
+        }
+      ],
+      "trace_sha256": "0176e8b44960c719579d4254ba4ece6c1ead7a273550004816da327969536003",
+      "input_sha256": "b0a842c065044e163a8620119cf3f4f86d3e8fb48e97ac203f12a4fb75deaf82"
+    },
+    "release": {
+      "apk_sha256": "eeeb2817e064acab2a42550c4598a8207e9625ac71da49b3ba8b5fcc9f503a79",
+      "installed_base_apk_sha256": "eeeb2817e064acab2a42550c4598a8207e9625ac71da49b3ba8b5fcc9f503a79",
+      "installed_hash_matches_submission": true,
+      "install_succeeded": true,
+      "mock_complete": "95.0 / 95 seconds",
+      "playing_after_completion": false,
+      "app_scoped_fatal_anr_matches": 0,
+      "main_settings_launcher_red_ui_checked": true
+    },
+    "cleanup": {
+      "controls": {
+        "speed_kph": 0,
+        "accelerator_pct": 0,
+        "brake_pct": 0,
+        "steering_deg": 0
+      },
+      "windows": {
+        "front_left": 0,
+        "front_right": 0,
+        "rear_left": 0,
+        "rear_right": 0
+      },
+      "driverSetpointC": 22,
+      "passengerSetpointC": 22,
+      "fanSpeed": 3,
+      "hvacOrWindowInterventionPerformedThisRun": false,
+      "heartbeatClosed": true,
+      "own8088ForwardRemoved": true,
+      "ownEmulatorStopped": true,
+      "originalAvdSaved": false,
+      "artifactDeletionPerformed": false
+    },
+    "scope": "Emulator UI/target colors and service inputs; debug Live and release Mock are distinct. No physical vehicle, actual lamp measurement, speaker listening or efficacy evidence."
+  },
+  "runtime_variants_2026_10_31": {
+    "debug_live": {
+      "apk_sha256": "a77ead75a338da46da50a6d6ba9038eb2a4213f46226be23df403bf50550fc45",
+      "state_samples": 1472,
+      "lighting_enabled": false,
+      "physical_lamp_measured": false
+    },
+    "release_smoke": {
+      "apk_sha256": "eeeb2817e064acab2a42550c4598a8207e9625ac71da49b3ba8b5fcc9f503a79",
+      "installed_base_apk_sha256": "eeeb2817e064acab2a42550c4598a8207e9625ac71da49b3ba8b5fcc9f503a79",
+      "mock_complete_seconds": 95.0,
+      "app_scoped_fatal_anr_matches": 0
+    }
+  },
+  "source_changes_from_previous_2026_10_31": [
+    "Compose UI files under app/.../ui",
+    "app/src/test/.../ui/UiFormatTest.kt",
+    "res/values/colors.xml window background; core, session, data, actuator, recovery, sdk unchanged"
+  ],
+  "current_runtime_results": {
+    "date": "2026-11-01",
+    "build": "release",
+    "apk_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+    "installed_base_apk_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+    "installed_hash_matches_submission": true,
+    "mock_complete": "1:35 / 1:35",
+    "mock_complete_seconds": 95.0,
+    "playing_after_completion": false,
+    "app_pid_scoped_fatal_exception_matches": 0,
+    "mock_source_video_sha256": "18362cc71108433ccec52b3c232bfd55c6a71d5fb8c39d7b0e0bc21c8340a262",
+    "mock_source_video_frame_audit": "passed: primary evidence is the actual source MP4 frame at PTS123.331689, not the earlier fixed-path UI XML",
+    "live_status": "prediction, steering, brake and recovery source-frame audits passed",
+    "recovery_current_run_status": "request-active-restore UI and front-passenger window setting observed; temperature adjustment not established",
+    "physical_vehicle_measured": false,
+    "physical_lamp_measured": false,
+    "human_listening_performed": false,
+    "mock_source_video_duration_seconds": 123.6357111111111,
+    "mock_completion_frame_seconds": 123.33168888888889,
+    "live": {
+      "source_video": "live-reactions-seatfill-v2.mp4",
+      "source_sha256": "5eae44eae1c53d707f8ae65a043c195931c9a35d6d24a78f37b7b67eff8e2d04",
+      "source_duration_seconds": 81.34396666666666,
+      "navigation_off_for_steering_and_brake": true,
+      "steering_left_deg": -100,
+      "steering_left_coral_seats": [
+        "REAR_LEFT"
+      ],
+      "steering_right_deg": 100,
+      "steering_right_coral_seats": [
+        "FRONT_PASSENGER",
+        "REAR_RIGHT"
+      ],
+      "brake_scene_steering_deg": 0,
+      "brake_scene_pedal_pressed": true,
+      "brake_amber_when_deceleration_condition_met": true,
+      "brake_condition_release_dark_intervals_present": true,
+      "continuous_amber_for_entire_brake_cut_claimed": false,
+      "driver_dark_in_reviewed_samples": true,
+      "lighting_enabled": false,
+      "actual_lamp_measured": false,
+      "screen_color_scope": "target color only",
+      "prediction_status": "passed: continuous source19-33sec at steering0, brakeoff, driveroff",
+      "prediction": {
+        "source_video": "live-prediction-seatfill-v3.mp4",
+        "sha256": "4525827caefd3802b1d723fe2462c8fa7015c58ea5e72570ca0cc45d29ff65b5",
+        "source_duration_seconds": 42.513422222222225,
+        "source_frames": 183,
+        "continuous_reviewed_source_interval_seconds": [
+          19.0,
+          33.0
+        ],
+        "eta_outside_window_frame_seconds": 25.1017,
+        "eta_outside_display_seconds": 4,
+        "eta_inside_window_frame_seconds": 25.43771111111111,
+        "eta_inside_display_seconds": 2,
+        "left_rear_fill_onset_frame_seconds": 25.8193,
+        "left_rear_fill_complete_frame_seconds": 26.22108888888889,
+        "steering_deg": 0,
+        "brake_pressed": false,
+        "driver_cue_present": false,
+        "screen_values_or_seat_colors_synthesized": false
+      }
+    },
+    "recovery": {
+      "source_video": "live-recovery-seatfill-v2.mp4",
+      "source_sha256": "5d889e47f19601da90bf25365a36735905c37e02f941e56b5bc19bc64638ed1d",
+      "source_duration_seconds": 24.509633333333333,
+      "reviewed_continuous_source_cut_seconds": [
+        0.5,
+        15.0
+      ],
+      "ui_request_active_restored": true,
+      "front_passenger_window_setting": [
+        0,
+        20,
+        0
+      ],
+      "other_window_settings_unchanged_at_zero": true,
+      "fan_speed": [
+        3,
+        3,
+        3
+      ],
+      "displayed_passenger_temperature_c": [
+        22.0,
+        22.0,
+        22.0
+      ],
+      "temperature_read_status": "PropertyNotAvailableException",
+      "successful_temperature_adjustment_claimed": false,
+      "physical_window_or_cabin_temperature_measured": false
+    },
+    "app_pid_scoped_anr_text_matches": 0,
+    "app_logcat_sha256": "ac87ad3e707db4522b7897731199c0eaa2bc4f3644dfc3255256011160ab130e"
+  },
+  "final_videos_status": "encoded and automatic audio/video checks passed; independent final visual audit passed",
+  "previous_runtime_results_2026_11_01_redesign": {
+    "date": "2026-11-01",
+    "apk_sha256": "059fd3d7212a1b2df1844f344f2ca1a2af6cd4a591e2ad6f26624f01a2024db4",
+    "build": "release",
+    "mock_complete": "1:35 / 1:35",
+    "app_crash_buffer_matches": 0,
+    "ui_operations_all_passed": true,
+    "touch_targets_under_76dp": 0,
+    "live": {
+      "fake_motion_events": false,
+      "navi_guidance": "LEFT 80m from the Navigation app",
+      "prediction_cue_rear_left": true,
+      "steering_left_rear_left": true,
+      "steering_right_front_and_rear_right": true,
+      "brake_cue_started_in_app_log": true,
+      "settings_unlocked_after_stop": true,
+      "lighting_enabled": false,
+      "physical_lamp_measured": false,
+      "input_sha256": "830ec5da81daa731954778adfdbfa44e070f128226e66891b71ee814afa54d44"
+    },
+    "split_window_width_dp": 841
+  },
+  "previous_final_videos_2026_11_01_redesign": [
+    {
+      "file": "demo/MotionCue_demo_ko.mp4",
+      "sha256": "835adf18a70c0921af9ce0177cce2cb3fa3617c5b041eac0fc27c7d1b4fece41",
+      "bytes": 7395517,
+      "duration_seconds": 125.73333333333333,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "video_codec": "h264",
+      "fps": 30,
+      "decode_errors": 0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "integrated_lufs": "-16.04",
+      "true_peak_dbtp": "-1.08",
+      "asr_passage_count": 11,
+      "asr_last_word_end_seconds": 124.5,
+      "audio_source_video_sha256": "e11e87213f844b2f34ae19ce74170f1fcd03cfd42d596f39335fe0a82981ad4d",
+      "encoded_aac_hash": "SHA256=9c7eba675b53fb040f45aa52e0902102acd3366b2c5f6e452274f462502fdbbe",
+      "decoded_pcm_hash": "SHA256=7f642900ee89c698e82da8cdfd583b35fe8d7fe3fbdc8bc69e9e5ebf347fb4e7",
+      "encoded_and_decoded_audio_equal_to_previously_validated_track": true,
+      "asr_reexecuted": false,
+      "human_listening_performed": false
+    },
+    {
+      "file": "demo/MotionCue_shortform_ko.mp4",
+      "sha256": "78c50bc6ef3f564a1f28c6103a371155b340035a61738be9becbc388878eabb7",
+      "bytes": 3538586,
+      "duration_seconds": 57.666666666666664,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "video_codec": "h264",
+      "fps": 30,
+      "decode_errors": 0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "integrated_lufs": "-16.09",
+      "true_peak_dbtp": "-1.45",
+      "asr_passage_count": 8,
+      "asr_last_word_end_seconds": 54.94,
+      "audio_source_video_sha256": "f0d65a7c2d5d8fce02fe271bd2d6aa58581cfe5afacbd644bb5840fe3102821b",
+      "encoded_aac_hash": "SHA256=d45b9cf1b640444d4a826781df77b3c6d7140b7baf926e002c90c1186c6818e9",
+      "decoded_pcm_hash": "SHA256=ecdace8860ae6d24511a9a8b1ecfe8c6f84337ca0db11017636d2c9d77ca558b",
+      "encoded_and_decoded_audio_equal_to_previously_validated_track": true,
+      "asr_reexecuted": false,
+      "human_listening_performed": false
+    }
+  ],
+  "previous_media_source_2026_11_01_redesign": {
+    "sourceFile": "redesign-live.mp4",
+    "sha256": "7da339a1e26225c7acdc533fc4e7f80dee0508f104eb60536b199b4f995d673d",
+    "dateKst": "2026-11-01",
+    "durationSeconds": 100.37397777777778,
+    "frames": 778,
+    "fpsAverage": 7.7510129340738825,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "crop": [
+      854,
+      92,
+      1680,
+      1208
+    ],
+    "realAppFootage": true,
+    "newCaptureDuringThisEditingTask": false,
+    "sampledFinalGeometryMatches": 13,
+    "installedApkHashBoundAtCapture": false,
+    "captureToApkByteIdentityClaimed": false,
+    "basis": "Final caution-card geometry, source/build/input/file timestamps, and real left/right/amber/prediction frames agree; no installed APK hash was preserved at capture.",
+    "allAppScenesUseThisSource": true,
+    "allEditorialCardsRerenderedForGraphiteDesign": true,
+    "playbackSpeed": 1.0,
+    "outputFps": 30,
+    "outputInterpolation": false,
+    "actualLampMeasured": false,
+    "recoveryAndTtsDetailedObservationDate": "2026-10-29",
+    "historicalObservationDateDisclosedInVideo": true
+  },
+  "source_changes_from_previous_2026_11_01_redesign": [
+    "CabinPanel.kt only: opaque full-seat cue fill and highest-contrast black/white text against animated background; 500ms fade maintained"
+  ],
+  "current_source_change": {
+    "file": "app/src/main/java/app/motioncue/ui/CabinPanel.kt",
+    "sha256": "c822fa852e8a7b53f34a942a1421e53a0c3b2ef99fec69b2ed1dfcc56afddb41",
+    "ui_only": true,
+    "protected_logic_files_unchanged": 35,
+    "active_fill_alpha": 1.0,
+    "fade_ms": 500,
+    "blink_introduced": false,
+    "driver_seat_code_unchanged": true
+  },
+  "current_build_validation": {
+    "unit_tests": 125,
+    "core_tests": 75,
+    "app_tests": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "lint_errors": 0,
+    "lint_warnings": 28,
+    "forced_rerun": true,
+    "executed_tasks": 134,
+    "debug_release_androidTest_builds_succeeded": true,
+    "signature": "Android Debug",
+    "signature_v2_verified": true
+  },
+  "apk_filename_policy": {
+    "file": "apk/MotionCue_release.apk",
+    "allowed_app_name_instead_of_real_name": true,
+    "source": "User reported organizer confirmation on 2026-11-01; no independent organizer contact was made by this task."
+  },
+  "media_source_2026_11_01_seatfill": {
+    "new_capture_during_this_editing_task": true,
+    "build": "release",
+    "installed_apk_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+    "capture_to_submission_apk_byte_identity_claimed": true,
+    "identity_scope": "Installed base.apk directly extracted and hashed before Mock and after capture; both equal the submitted release. Actual source frame evidence is recorded independently.",
+    "mock_source_file": "mock-seatfill-v1.mp4",
+    "mock_source_sha256": "18362cc71108433ccec52b3c232bfd55c6a71d5fb8c39d7b0e0bc21c8340a262",
+    "live_sources_status": "prediction, steering/brake and recovery source-frame audits passed",
+    "final_media_status": "encoded and automatic audio/video checks passed; independent final visual audit passed",
+    "installed_apk_after_capture_sha256": "deabf10e38f94a862117888a94f69b89b8266ac22cd57b293ff290be6e621477",
+    "reviewed_live_sources": [
+      {
+        "file": "live-reactions-seatfill-v2.mp4",
+        "sha256": "5eae44eae1c53d707f8ae65a043c195931c9a35d6d24a78f37b7b67eff8e2d04"
+      },
+      {
+        "file": "live-recovery-seatfill-v2.mp4",
+        "sha256": "5d889e47f19601da90bf25365a36735905c37e02f941e56b5bc19bc64638ed1d"
+      },
+      {
+        "file": "live-prediction-seatfill-v3.mp4",
+        "sha256": "4525827caefd3802b1d723fe2462c8fa7015c58ea5e72570ca0cc45d29ff65b5"
+      }
+    ],
+    "prediction_editorial_layout": {
+      "same_source_frame_panels": [
+        "seats",
+        "turn/ETA",
+        "speed",
+        "steering"
+      ],
+      "brake_and_deceleration_tiles_excluded_from_prediction_crop": true,
+      "synthetic_ui_values_or_colors": false,
+      "layout_status": "rendered with current source; independent final visual audit passed"
+    }
+  },
+  "runtime_evidence_collection_limitations": {
+    "fixed_remote_uiautomator_path_can_return_stale_xml": true,
+    "primary_current_screen_evidence": "Actual screenrecord MP4 frames and screencap PNGs",
+    "stale_xml_used_as_independent_completion_evidence": false,
+    "new_dump_uses_unique_remote_path": true,
+    "note": "Earlier fixed-path XML remains preserved but is not accepted alone for timing or UI state."
+  },
+  "current_screenshots": [
+    {
+      "file": "docs/screenshots/seatfill-live-right-steering.png",
+      "sourceFrame": "verification/2026-11-01-video-reedit/audit/live-reactions-source-frames/02-right-steady.png",
+      "sha256": "1e0bbd573ce3416610dd736f7e409c8fe03afc2f55d069efe428b2ad304b2231",
+      "sourceActualFrameSeconds": 33.23397777777778,
+      "unalteredPngCopy": true
+    },
+    {
+      "file": "docs/screenshots/seatfill-live-brake-amber.png",
+      "sourceFrame": "verification/2026-11-01-video-reedit/audit/live-reactions-source-frames/06-decel-b.png",
+      "sha256": "5a7eda74ac1842df49de8c003259b9fe74e3eb80115979a2801ecd091410b7e6",
+      "sourceActualFrameSeconds": 68.1511,
+      "unalteredPngCopy": true
+    },
+    {
+      "file": "docs/screenshots/seatfill-live-left-prediction.png",
+      "sourceFrame": "verification/2026-11-01-video-reedit/audit/live-prediction-v3-source-frames/07-fill-complete.png",
+      "sha256": "8723496328c5a2ea5ca2115f317baa90ee246002096392391b1e59d600279b7f",
+      "sourceActualFrameSeconds": 26.22108888888889,
+      "unalteredPngCopy": true
+    }
+  ],
+  "live_input_limitations": {
+    "speed_source": "FusedLocation/navigation-based estimate",
+    "non_monotonic_emulator_gps_speed_and_deceleration_estimates_observed": true,
+    "physical_stable_driving_validation_claimed": false,
+    "brake_cue_conditional_on_pedal_and_deceleration": true
+  },
+  "current_cleanup": {
+    "controls": {
+      "speed_kph": 0,
+      "accelerator_pct": 0,
+      "brake_pct": 0,
+      "steering_deg": 0
+    },
+    "window_settings": {
+      "front_left": 0,
+      "front_right": 0,
+      "rear_left": 0,
+      "rear_right": 0
+    },
+    "navigation_ended": true,
+    "app_reset_and_paused": true,
+    "heartbeat_closed": true,
+    "forward_removed": true,
+    "emulator_shutdown_command_accepted": true,
+    "cleanup_command_results_reported_by": "Parent agent; controls/windows additionally checked from cleanup-final-state.json",
+    "cleanup_state_sha256": "e9679822e9ae00b235a9af545ee32c9292f94869dff563616d335b1be0cc9dbd",
+    "physical_state_verified": false
+  },
+  "final_media_independent_review": {
+    "status": "passed",
+    "visualFrameCount": 35,
+    "posterCount": 2,
+    "actionableFindings": [],
+    "localEvidence": "verification/2026-11-01-video-reedit/audit/FINAL_VIDEO_QA.json",
+    "evidenceSha256": "3fc87a55eadff7efec5f64ab44bd20236cb4af155f962a37fe57780d9ad52aa6",
+    "physicalVehicleVerified": false,
+    "humanListeningPerformed": false
+  }
+}

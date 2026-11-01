@@ -1,0 +1,18 @@
+# Gradle / Android Studio
+.gradle/
+build/
+/local.properties
+/.idea/
+*.iml
+/captures
+.externalNativeBuild
+.cxx
+.kotlin/
+
+# 서명 키 (local.properties로 경로만 지정)
+*.jks
+*.keystore
+
+# OS
+.DS_Store
+Thumbs.db

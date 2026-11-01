@@ -1,0 +1,42 @@
+{
+  "name": "도심 주행 기본 시나리오",
+  "durationSec": 95,
+  "tickMs": 100,
+  "speedKmh": [
+    [0, 0], [9, 50], [24, 50], [30, 20], [34, 20], [39, 40], [42, 40],
+    [46, 15], [49, 15], [54, 45], [60, 45], [65, 20], [70, 20], [75, 40],
+    [84, 40], [93, 0], [95, 0]
+  ],
+  "steeringDeg": [
+    [76, 0], [77.5, -120], [79.5, -120], [81, 0]
+  ],
+  "brakeIntervalsSec": [
+    [84, 95]
+  ],
+  "maneuvers": [
+    {
+      "turnType": "TURN_LEFT",
+      "passAtSec": 32,
+      "announceDistanceM": 300,
+      "description": "시청사거리에서 좌회전",
+      "steerPeakDeg": -270,
+      "steerDurationSec": 5
+    },
+    {
+      "turnType": "TURN_SHARP_R",
+      "passAtSec": 67.5,
+      "announceDistanceM": 150,
+      "description": "역삼로 방면 급우회전",
+      "steerPeakDeg": 420,
+      "steerDurationSec": 5
+    }
+  ],
+  "cautions": [
+    {
+      "type": "SPEED_BUMP",
+      "passAtSec": 47.5,
+      "announceDistanceM": 100,
+      "id": "bump-1"
+    }
+  ]
+}

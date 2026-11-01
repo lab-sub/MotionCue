@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MotionCue" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/motioncue_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/motioncue_background</item>
+    </style>
+</resources>
