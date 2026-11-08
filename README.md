@@ -30,7 +30,7 @@
 
 ## 실행 방법
 
-저장소: https://github.com/lab-sub/MotionCue (비공개)
+저장소: https://github.com/lab-sub/MotionCue
 
 **APK 위치: [apk/MotionCue_release.apk](apk/MotionCue_release.apk)** (버전 0.1.0, 39,594,763 bytes, 패키지 `app.motioncue`)
 
